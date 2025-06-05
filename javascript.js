@@ -16,3 +16,9 @@ function makeGrids(size) {
 makeGrids(16);
 
 const cells = document.querySelectorAll(".cell");
+
+cells.forEach((cell) => {
+  cell.addEventListener("mouseenter", () => {
+    cell.setAttribute("style", "background-color:black;");
+  });
+});
